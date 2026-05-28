@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calendário E-mail Marketing — Junho 2026 | Perfuma & Decora</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Arial, sans-serif; background: #FAF6F2; color: #2C1A0E; font-size: 14px; line-height: 1.6; }
+
+  /* NAV */
+  .nav { background: #3D1F10; padding: 16px 40px; display: flex; align-items: center; gap: 12px; position: sticky; top: 0; z-index: 100; }
+  .nav-brand { color: #D4A88A; font-size: 13px; font-weight: bold; letter-spacing: 2px; }
+  .nav-title { color: #fff; font-size: 16px; font-weight: bold; }
+  .nav-badge { margin-left: auto; background: #6B3F2A; color: #D4A88A; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: bold; }
+
+  /* HERO */
+  .hero { background: linear-gradient(135deg, #3D1F10 0%, #6B3F2A 60%, #9B5E3A 100%); padding: 60px 40px; text-align: center; }
+  .hero-sub { color: #D4A88A; font-size: 12px; letter-spacing: 3px; font-weight: bold; margin-bottom: 12px; }
+  .hero h1 { color: #fff; font-size: 36px; font-weight: bold; margin-bottom: 12px; }
+  .hero-month { color: #D4A88A; font-size: 22px; margin-bottom: 20px; }
+  .hero-desc { color: #C4A882; font-size: 14px; font-style: italic; }
+
+  /* PILLARS */
+  .section { padding: 40px; max-width: 1100px; margin: 0 auto; }
+  .section-title { font-size: 22px; font-weight: bold; color: #6B3F2A; border-bottom: 3px solid #D4A88A; padding-bottom: 8px; margin-bottom: 24px; }
+  .pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 32px; }
+  .pillar { background: #fff; border-radius: 10px; padding: 20px; border-top: 4px solid; }
+  .pillar.p1 { border-color: #6B3F2A; }
+  .pillar.p2 { border-color: #4A7C3F; }
+  .pillar.p3 { border-color: #3A5F8A; }
+  .pillar h3 { font-size: 15px; font-weight: bold; margin-bottom: 8px; }
+  .pillar.p1 h3 { color: #6B3F2A; }
+  .pillar.p2 h3 { color: #4A7C3F; }
+  .pillar.p3 h3 { color: #3A5F8A; }
+  .pillar p { font-size: 13px; color: #555; }
+
+  /* OFERTA */
+  .offer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 32px; }
+  .offer-card { background: #F5EDE6; border: 2px solid #D4A88A; border-radius: 10px; padding: 24px; text-align: center; }
+  .offer-card .big { font-size: 32px; font-weight: bold; color: #6B3F2A; }
+  .offer-card .sub { font-size: 14px; color: #2C1A0E; margin-top: 6px; }
+
+  /* CALENDARIO */
+  .calendar-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 32px; }
+  .calendar-table th { background: #3D1F10; color: #fff; padding: 12px 10px; text-align: left; font-size: 12px; letter-spacing: 1px; }
+  .calendar-table th:first-child, .calendar-table td:first-child { text-align: center; width: 40px; }
+  .calendar-table th:nth-child(2), .calendar-table td:nth-child(2) { text-align: center; width: 70px; }
+  .calendar-table th:nth-child(3), .calendar-table td:nth-child(3) { text-align: center; width: 50px; }
+  .calendar-table th:nth-last-child(2), .calendar-table td:nth-last-child(2) { width: 140px; }
+  .calendar-table th:last-child, .calendar-table td:last-child { width: 130px; text-align: center; }
+  .calendar-table td { padding: 10px; border: 1px solid #E0C9B8; vertical-align: middle; }
+  .calendar-table tr:nth-child(even) td { background: #F9F5F2; }
+  .calendar-table tr:nth-child(odd) td { background: #fff; }
+  .calendar-table tr.special td { background: #FFF3E0 !important; }
+  .email-num { font-weight: bold; color: #6B3F2A; }
+  .tag { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: bold; }
+  .tag-promo { background: #E8F5E9; color: #2E7D32; }
+  .tag-content { background: #E3F2FD; color: #1565C0; }
+  .tag-dn { background: #FFF8E1; color: #F57F17; }
+  .tag-urgency { background: #FFEBEE; color: #C62828; }
+  .tag-reeng { background: #EDE7F6; color: #4527A0; }
+  .tag-luxury { background: #FCE4EC; color: #880E4F; }
+
+  /* EMAIL CARDS */
+  .emails-section { max-width: 900px; margin: 0 auto; padding: 0 40px 60px; }
+  .email-card { background: #fff; border-radius: 12px; overflow: hidden; margin-bottom: 40px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+  .email-header { background: #3D1F10; padding: 20px 24px; }
+  .email-header .num { color: #D4A88A; font-size: 12px; font-weight: bold; letter-spacing: 2px; margin-bottom: 4px; }
+  .email-header .date-line { color: #C4A882; font-size: 12px; }
+  .email-header.luxury { background: linear-gradient(135deg, #1a0a2e 0%, #3d1054 100%); }
+  .email-header.luxury .num { color: #CE93D8; }
+  .email-header.luxury .date-line { color: #BA68C8; }
+
+  .email-body { padding: 24px; }
+  .field-label { font-size: 11px; font-weight: bold; color: #6B3F2A; letter-spacing: 1px; margin-bottom: 4px; }
+  .field-box { background: #F5EDE6; border-left: 3px solid #D4A88A; padding: 12px 16px; border-radius: 0 8px 8px 0; margin-bottom: 16px; }
+  .field-box .assunto { font-size: 16px; font-weight: bold; color: #2C1A0E; margin-bottom: 8px; }
+  .field-box .preview { font-size: 13px; color: #777; font-style: italic; }
+  .field-box.luxury-box { background: #F3E5F5; border-left-color: #7B1FA2; }
+
+  .copy-label { font-size: 11px; font-weight: bold; color: #6B3F2A; letter-spacing: 1px; margin-bottom: 10px; }
+  .copy-text { font-size: 14px; line-height: 1.9; color: #2C1A0E; white-space: pre-line; background: #FAFAFA; border: 1px solid #F0E8E0; border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+  .copy-text.luxury-copy { background: #FAF5FF; border-color: #E1BEE7; }
+
+  .cta-btn { display: block; background: #6B3F2A; color: #fff; text-align: center; padding: 14px 24px; border-radius: 8px; font-weight: bold; font-size: 14px; text-decoration: none; margin-bottom: 16px; }
+  .cta-btn.luxury-cta { background: linear-gradient(135deg, #4A148C, #7B1FA2); }
+
+  .link-box { background: #E8F5E9; border: 1px solid #81C784; border-radius: 8px; padding: 12px 16px; margin-bottom: 12px; }
+  .link-label { font-size: 11px; font-weight: bold; color: #2E7D32; margin-bottom: 4px; letter-spacing: 1px; }
+  .link-url { font-size: 12px; color: #1565C0; word-break: break-all; }
+
+  .banner-box { background: #F3E5F5; border: 1px solid #CE93D8; border-radius: 8px; padding: 14px 16px; }
+  .banner-label { font-size: 11px; font-weight: bold; color: #6A1B9A; margin-bottom: 8px; letter-spacing: 1px; }
+  .banner-items { list-style: none; padding: 0; }
+  .banner-items li { font-size: 13px; color: #3E2651; padding: 3px 0 3px 14px; position: relative; }
+  .banner-items li::before { content: "›"; position: absolute; left: 0; color: #7B1FA2; font-weight: bold; }
+
+  .sig { color: #999; font-style: italic; font-size: 13px; margin-top: 12px; }
+  .sig strong { color: #6B3F2A; font-size: 14px; display: block; font-style: normal; }
+
+  /* FOOTER */
+  footer { background: #3D1F10; color: #C4A882; text-align: center; padding: 24px; font-size: 12px; }
+
+  /* LUXURY TAG */
+  .new-badge { display: inline-block; background: #FCE4EC; color: #880E4F; padding: 2px 10px; border-radius: 10px; font-size: 11px; font-weight: bold; margin-left: 8px; vertical-align: middle; }
+
+  /* DIVIDER */
+  .divider { border: none; border-top: 2px solid #E0C9B8; margin: 40px 40px; }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <span class="nav-brand">PERFUMA & DECORA</span>
+  <span style="color:#D4A88A">›</span>
+  <span class="nav-title">Calendário E-mail Marketing — Junho 2026</span>
+  <span class="nav-badge">9 e-mails</span>
+</nav>
+
+<div class="hero">
+  <div class="hero-sub">REMIND MARKETING DIGITAL</div>
+  <h1>Calendário de E-mail Marketing</h1>
+  <div class="hero-month">Junho 2026</div>
+  <div class="hero-desc">Campanha: Velas Aromáticas · Dia dos Namorados · Inverno · Big Vela Luxury</div>
+</div>
+
+<!-- ESTRATÉGIA -->
+<div class="section">
+  <div class="section-title">Estratégia da Campanha</div>
+  <div class="pillars">
+    <div class="pillar p1">
+      <h3>🕯️ Inverno & Aconchego</h3>
+      <p>Com a chegada do inverno, as velas aromáticas entram em alta estação. O frio é o gancho perfeito para criar momentos acolhedores em casa — e a marca já observou aumento nas vendas.</p>
+    </div>
+    <div class="pillar p2">
+      <h3>💛 Dia dos Namorados</h3>
+      <p>12 de junho, mas o foco não é o presente: é o <strong>momento</strong>. A atmosfera criada em casa com uma vela acesa transforma qualquer noite comum em inesquecível.</p>
+    </div>
+    <div class="pillar p3">
+      <h3>✨ Autocuidado & Experiência</h3>
+      <p>A copy valoriza o sentir antes do comprar. A vela não é decoração — ela cria a experiência que o cliente quer viver. Tom sensorial, poético e íntimo.</p>
+    </div>
+  </div>
+
+  <div class="section-title">Oferta da Campanha</div>
+  <div class="offer-grid">
+    <div class="offer-card">
+      <div class="big">25% OFF</div>
+      <div class="sub">em toda a linha de velas aromáticas</div>
+    </div>
+    <div class="offer-card">
+      <div class="big" style="font-size:22px;">🎁 Vela 80g de brinde</div>
+      <div class="sub">em compras acima de R$ 99,00</div>
+    </div>
+  </div>
+
+  <div class="section-title">Calendário de Envios</div>
+  <table class="calendar-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Data</th>
+        <th>Dia</th>
+        <th>Assunto / Tema</th>
+        <th>Segmentação RD</th>
+        <th>Objetivo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="email-num">01</td>
+        <td>02/06</td>
+        <td>Ter</td>
+        <td>O inverno chegou. E com ele, o convite para desacelerar.</td>
+        <td>Leads ativos</td>
+        <td><span class="tag tag-promo">Lançamento promo</span></td>
+      </tr>
+      <tr>
+        <td class="email-num">02</td>
+        <td>05/06</td>
+        <td>Sex</td>
+        <td>Qual fragrância combina com a sua noite de inverno?</td>
+        <td>Todos os contatos</td>
+        <td><span class="tag tag-content">Conteúdo</span></td>
+      </tr>
+      <tr>
+        <td class="email-num">03</td>
+        <td>08/06</td>
+        <td>Seg</td>
+        <td>Daqui a 4 dias, você vai querer ter feito isso.</td>
+        <td>Leads ativos</td>
+        <td><span class="tag tag-dn">Pré-Namorados</span></td>
+      </tr>
+      <tr>
+        <td class="email-num">04</td>
+        <td>10/06</td>
+        <td>Qua</td>
+        <td>25% OFF + brinde: porque o Dia dos Namorados merece.</td>
+        <td>Todos os contatos</td>
+        <td><span class="tag tag-urgency">Oferta</span></td>
+      </tr>
+      <tr>
+        <td class="email-num">05</td>
+        <td>11/06</td>
+        <td>Qui</td>
+        <td>Amanhã é o dia. Você está pronta para o momento?</td>
+        <td>Todos os contatos</td>
+        <td><span class="tag tag-urgency">Urgência</span></td>
+      </tr>
+      <tr class="special">
+        <td class="email-num">06</td>
+        <td>12/06</td>
+        <td>Sex ❤️</td>
+        <td>Hoje é o dia de criar memórias. Que o aroma ajude.</td>
+        <td>Todos os contatos</td>
+        <td><span class="tag tag-dn">Dia dos Namorados</span></td>
+      </tr>
+      <tr>
+        <td class="email-num">07</td>
+        <td>17/06</td>
+        <td>Qua</td>
+        <td>A gente sente sua falta. O inverno ainda tem muito aconchego.</td>
+        <td>Leads inativos</td>
+        <td><span class="tag tag-reeng">Reengajamento</span></td>
+      </tr>
+      <tr>
+        <td class="email-num" style="color:#880E4F;">08</td>
+        <td>20/06</td>
+        <td>Sex</td>
+        <td>Uma vela de 4.500g — e 300 a 500 horas de inverno aconchegante.</td>
+        <td>Todos os contatos</td>
+        <td><span class="tag tag-luxury">Big Vela Luxury</span></td>
+      </tr>
+      <tr>
+        <td class="email-num">09</td>
+        <td>25/06</td>
+        <td>Qui</td>
+        <td>Últimas horas da promoção de junho. Não deixa passar.</td>
+        <td>Todos os contatos</td>
+        <td><span class="tag tag-promo">Encerramento</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<hr class="divider">
+
+<!-- EMAILS -->
+<div class="emails-section">
+  <div class="section-title" style="margin-bottom:32px;">Copies dos E-mails</div>
+
+  <!-- EMAIL 01 -->
+  <div class="email-card">
+    <div class="email-header">
+      <div class="num">E-MAIL 01</div>
+      <div class="date-line">02/06/2026 (Terça-feira) &nbsp;|&nbsp; Leads ativos &nbsp;|&nbsp; Lançamento da promoção</div>
+    </div>
+    <div class="email-body">
+      <div class="field-label">ASSUNTO E PREVIEW TEXT</div>
+      <div class="field-box">
+        <div class="assunto">O inverno chegou. E com ele, o convite para desacelerar.</div>
+        <div class="preview">Descubra como o aroma transforma a sua casa numa experiência</div>
+      </div>
+      <div class="copy-label">CORPO DO E-MAIL</div>
+      <div class="copy-text">Tem um cheiro específico que o inverno tem.
+De cobertor, de café, de casa aquecida.
+
+E quando a gente combina esse aroma com o de uma vela acesa...
+a casa inteira muda de clima.
+
+Mais aconchegante. Mais íntima. Mais sua.
+
+É por isso que junho é o mês das velas aromáticas.
+E este mês, você aproveita com 25% de desconto em toda a linha.
+
+Em compras acima de R$ 99, você ganha uma velinha aromática de brinde.
+
+Porque inverno pede aconchego — e a gente cuida disso.</div>
+
+      <a class="cta-btn" href="#">APROVEITAR 25% OFF</a>
+
+      <div class="link-box">
+        <div class="link-label">🔗 LINK DE DESTINO DO CTA</div>
+        <div class="link-url">https://www.perfumaedecora.com.br/velas-aromaticas?utm_source=email&utm_medium=rdstation&utm_campaign=junho2026_inverno&utm_content=email01_lancamento_promo</div>
+      </div>
+
+      <div class="banner-box">
+        <div class="banner-label">🎨 BRIEFING DE BANNER — DESIGNER</div>
+        <ul class="banner-items">
+          <li>Formato: Banner principal (600px de largura)</li>
+          <li>Cena: ambiente de inverno aconchegante — mesa ou criado-mudo com vela acesa, luz quente e suave, textura de cobertor ou madeira ao fundo</li>
+          <li>Texto em destaque: "25% OFF nas Velas Aromáticas + Brinde em compras acima de R$ 99"</li>
+          <li>Paleta: tons terracota, marrom escuro, dourado/âmbar — identidade da marca</li>
+          <li>Produto em destaque: vela 400g (fragrância de inverno: Musgo de Carvalho ou Manhãs de Outono)</li>
+          <li>Estilo: lifestyle elegante e atmosférico — não promocional demais</li>
+        </ul>
+      </div>
+      <p class="sig">Com carinho, <strong>Perfuma & Decora</strong></p>
+    </div>
+  </div>
+
+  <!-- EMAIL 02 -->
+  <div class="email-card">
+    <div class="email-header">
+      <div class="num">E-MAIL 02</div>
+      <div class="date-line">05/06/2026 (Sexta-feira) &nbsp;|&nbsp; Todos os contatos &nbsp;|&nbsp; Conteúdo / educativo</div>
+    </div>
+    <div class="email-body">
+      <div class="field-label">ASSUNTO E PREVIEW TEXT</div>
+      <div class="field-box">
+        <div class="assunto">Qual fragrância combina com a sua noite de inverno?</div>
+        <div class="preview">Deixa o inverno ficar mais gostoso de sentir</div>
+      </div>
+      <div class="copy-label">CORPO DO E-MAIL</div>
+      <div class="copy-text">Cada noite de inverno pede uma fragrância diferente.
+Pensa com a gente:
+
+Uma noite de filme no sofá?
+Vanila Cream ou Manhãs de Outono. Quentes, doces, acolhedoras.
+
+Um jantar em casa com quem você ama?
+Neroli & Frangipani ou Pear & Frésia. Sofisticadas e delicadas.
+
+Uma semana intensa e o quarto precisa virar refúgio?
+Musgo de Carvalho ou Canela & Patchouli. Amadeiradas, profundas, envolventes.
+
+O aroma certo não decora a casa.
+Ele muda o que você sente dentro dela.
+
+Toda a linha de velas aromáticas com 25% OFF
++ vela de brinde em compras acima de R$ 99.</div>
+
+      <a class="cta-btn" href="#">ESCOLHER MINHA FRAGRÂNCIA</a>
+
+      <div class="link-box">
+        <div class="link-label">🔗 LINK DE DESTINO DO CTA</div>
+        <div class="link-url">https://www.perfumaedecora.com.br/velas-aromaticas?utm_source=email&utm_medium=rdstation&utm_campaign=junho2026_inverno&utm_content=email02_guia_fragrancias</div>
+      </div>
+
+      <div class="banner-box">
+        <div class="banner-label">🎨 BRIEFING DE BANNER — DESIGNER</div>
+        <ul class="banner-items">
+          <li>Formato: Banner principal (600px) + 3 banners secundários de produto em grade (3 colunas, ~180px cada)</li>
+          <li>Banner principal: headline "Qual fragrância combina com a sua noite?" — fundo escuro/noturno, vela com chama visível</li>
+          <li>Card 1 — Noite de filme: foto de sofá com cobertor + vela Vanila Cream ou Manhãs de Outono (nome + preço com 25% OFF)</li>
+          <li>Card 2 — Jantar romântico: mesa posta, luz de vela, produto Neroli & Frangipani ou Pear & Frésia</li>
+          <li>Card 3 — Refúgio no quarto: cama arrumada, vela na mesa lateral, produto Musgo de Carvalho ou Canela & Patchouli</li>
+          <li>Estilo: editorial limpo, inspiracional — referência Pinterest de home decor</li>
+        </ul>
+      </div>
+      <p class="sig">Com carinho, <strong>Perfuma & Decora</strong></p>
+    </div>
+  </div>
+
+  <!-- EMAIL 03 -->
+  <div class="email-card">
+    <div class="email-header">
+      <div class="num">E-MAIL 03</div>
+      <div class="date-line">08/06/2026 (Segunda-feira) &nbsp;|&nbsp; Leads ativos &nbsp;|&nbsp; Pré-Dia dos Namorados</div>
+    </div>
+    <div class="email-body">
+      <div class="field-label">ASSUNTO E PREVIEW TEXT</div>
+      <div class="field-box">
+        <div class="assunto">Daqui a 4 dias, você vai querer ter feito isso.</div>
+        <div class="preview">O Dia dos Namorados não precisa de roteiro — só de atmosfera</div>
+      </div>
+      <div class="copy-label">CORPO DO E-MAIL</div>
+      <div class="copy-text">Você não precisa reservar um restaurante caro.
+Não precisa ter um roteiro perfeito.
+Não precisa de um presente elaborado.
+
+Às vezes, o que transforma uma noite comum em inesquecível é bem mais simples.
+
+É a luz mais baixa.
+É a música certa.
+É o perfume que envolve o ambiente antes mesmo de você perceber.
+
+Uma vela aromática tem esse poder silencioso.
+Ela aquece sem falar nada.
+Ela cria o clima antes que o momento comece.
+
+No Dia dos Namorados, prepare o ambiente.
+Deixe o aroma fazer a diferença.
+
+Toda a linha de velas com 25% OFF
++ velinha de brinde em compras acima de R$ 99.</div>
+
+      <a class="cta-btn" href="#">PREPARAR MEU AMBIENTE</a>
+
+      <div class="link-box">
+        <div class="link-label">🔗 LINK DE DESTINO DO CTA</div>
+        <div class="link-url">https://www.perfumaedecora.com.br/velas-aromaticas?utm_source=email&utm_medium=rdstation&utm_campaign=junho2026_namorados&utm_content=email03_pre_namorados</div>
+      </div>
+
+      <div class="banner-box">
+        <div class="banner-label">🎨 BRIEFING DE BANNER — DESIGNER</div>
+        <ul class="banner-items">
+          <li>Formato: Banner único atmosférico (600px) — sem grade de produtos</li>
+          <li>Cena: quarto ou sala preparada de forma intimista — vela acesa, luz muito suave e quente</li>
+          <li>Mínimo de texto no banner — deixar o visual falar; apenas logo da marca discreto</li>
+          <li>Paleta: escura, quente, âmbar — transmitir intimidade e sofisticação</li>
+          <li>Evitar: corações, tons rosa, ícones clichê de Dia dos Namorados — o tom aqui é atmosférico</li>
+          <li>Referência de estilo: fotografia de lifestyle de hotel boutique ou editorial de interiores</li>
+        </ul>
+      </div>
+      <p class="sig">Com carinho, <strong>Perfuma & Decora</strong></p>
+    </div>
+  </div>
+
+  <!-- EMAIL 04 -->
+  <div class="email-card">
+    <div class="email-header">
+      <div class="num">E-MAIL 04</div>
+      <div class="date-line">10/06/2026 (Quarta-feira) &nbsp;|&nbsp; Todos os contatos &nbsp;|&nbsp; Oferta + urgência</div>
+    </div>
+    <div class="email-body">
+      <div class="field-label">ASSUNTO E PREVIEW TEXT</div>
+      <div class="field-box">
+        <div class="assunto">25% OFF + brinde: porque o Dia dos Namorados merece isso.</div>
+        <div class="preview">E o melhor: você não precisa nem sair de casa para criar o momento</div>
+      </div>
+      <div class="copy-label">CORPO DO E-MAIL</div>
+      <div class="copy-text">O Dia dos Namorados tá chegando — e você ainda dá tempo de preparar um momento que ninguém vai esquecer.
+
+A promoção mais especial de junho continua:
+✅ 25% OFF em toda a linha de velas aromáticas
+✅ Vela aromática 80g de brinde em compras acima de R$ 99
+
+Vai jantar em casa? Acenda uma vela.
+Vai receber ele — ou ela? Acenda uma vela.
+Quer transformar o quarto em um refúgio? Acenda uma vela.
+
+O aroma faz o restante.
+
+Não deixa passar — o Dia dos Namorados é sexta.</div>
+
+      <a class="cta-btn" href="#">GARANTIR MINHA VELA COM DESCONTO</a>
+
+      <div class="link-box">
+        <div class="link-label">🔗 LINK DE DESTINO DO CTA</div>
+        <div class="link-url">https://www.perfumaedecora.com.br/velas-aromaticas?utm_source=email&utm_medium=rdstation&utm_campaign=junho2026_namorados&utm_content=email04_oferta</div>
+      </div>
+
+      <div class="banner-box">
+        <div class="banner-label">🎨 BRIEFING DE BANNER — DESIGNER</div>
+        <ul class="banner-items">
+          <li>Formato: Banner de oferta (600px) — visual mais direto e comercial</li>
+          <li>Layout: metade esquerda com imagem da vela 400g + metade direita com "25% OFF" em tipografia grande</li>
+          <li>Destaque para o brinde: imagem da vela 80g com tag "GRÁTIS"</li>
+          <li>Urgência: incluir "Só até sexta-feira" ou "12 de junho" em destaque secundário</li>
+          <li>CTA visível também no banner: botão ou seta "Comprar agora"</li>
+        </ul>
+      </div>
+      <p class="sig">Com carinho, <strong>Perfuma & Decora</strong></p>
+    </div>
+  </div>
+
+  <!-- EMAIL 05 -->
+  <div class="email-card">
+    <div class="email-header">
+      <div class="num">E-MAIL 05</div>
+      <div class="date-line">11/06/2026 (Quinta-feira) &nbsp;|&nbsp; Todos os contatos &nbsp;|&nbsp; Urgência — véspera</div>
+    </div>
+    <div class="email-body">
+      <div class="field-label">ASSUNTO E PREVIEW TEXT</div>
+      <div class="field-box">
+        <div class="assunto">Amanhã é o dia. Você está pronta para o momento?</div>
+        <div class="preview">Último dia para garantir a sua vela a tempo</div>
+      </div>
+      <div class="copy-label">CORPO DO E-MAIL</div>
+      <div class="copy-text">Amanhã é Dia dos Namorados.
+
+E a gente sabe que o presente mais bonito não cabe em caixa.
+Ele é sentido.
+
+Antes do jantar.
+Antes da chegada.
+Antes do encontro começar.
+
+Acenda uma vela.
+Deixe o perfume tomar conta do espaço.
+Crie uma atmosfera que só vocês dois vão lembrar.
+
+25% OFF + vela de brinde em compras acima de R$ 99.
+Hoje é o último dia para garantir.</div>
+
+      <a class="cta-btn" href="#">GARANTIR AGORA</a>
+
+      <div class="link-box">
+        <div class="link-label">🔗 LINK DE DESTINO DO CTA</div>
+        <div class="link-url">https://www.perfumaedecora.com.br/velas-aromaticas?utm_source=email&utm_medium=rdstation&utm_campaign=junho2026_namorados&utm_content=email05_vespera</div>
+      </div>
+
+      <div class="banner-box">
+        <div class="banner-label">🎨 BRIEFING DE BANNER — DESIGNER</div>
+        <ul class="banner-items">
+          <li>Formato: Banner de urgência (600px) — visual impactante e texto limpo</li>
+          <li>Headline: "Último dia" ou "Amanhã é o Dia dos Namorados" em tipografia grande</li>
+          <li>Imagem: vela acesa em close, chama bem visível — transmitir calor e urgência</li>
+          <li>Paleta: mais escura e contrastante que os emails anteriores</li>
+          <li>Nota: não precisa de banner elaborado — imagem atmosférica simples + headline já é suficiente</li>
+        </ul>
+      </div>
+      <p class="sig">Com carinho, <strong>Perfuma & Decora</strong></p>
+    </div>
+  </div>
+
+  <!-- EMAIL 06 -->
+  <div class="email-card" style="border: 2px solid #F9A825;">
+    <div class="email-header">
+      <div class="num">E-MAIL 06 ❤️ DIA DOS NAMORADOS</div>
+      <div class="date-line">12/06/2026 (Sexta-feira) &nbsp;|&nbsp; Todos os contatos &nbsp;|&nbsp; Celebração + última chamada</div>
+    </div>
+    <div class="email-body">
+      <div class="field-label">ASSUNTO E PREVIEW TEXT</div>
+      <div class="field-box">
+        <div class="assunto">Hoje é o dia de criar memórias. Que o aroma ajude.</div>
+        <div class="preview">Feliz Dia dos Namorados, com carinho da Perfuma & Decora</div>
+      </div>
+      <div class="copy-label">CORPO DO E-MAIL</div>
+      <div class="copy-text">Feliz Dia dos Namorados. 🕯️
+
+Que hoje seja um dia de presença.
+De conexão.
+De momentos sentidos de verdade.
+
+E se uma velinha aromática puder ajudar a criar esse clima...
+fica o convite: acenda uma antes do momento começar.
+
+A luz mais baixa.
+O perfume tomando conta do ar.
+A sensação de que o mundo lá fora pode esperar.
+
+A promoção ainda está ativa hoje:
+25% OFF + velinha de brinde em compras acima de R$ 99.</div>
+
+      <a class="cta-btn" href="#">VER AS VELAS</a>
+
+      <div class="link-box">
+        <div class="link-label">🔗 LINK DE DESTINO DO CTA</div>
+        <div class="link-url">https://www.perfumaedecora.com.br/velas-aromaticas?utm_source=email&utm_medium=rdstation&utm_campaign=junho2026_namorados&utm_content=email06_dia_namorados</div>
+      </div>
+
+      <div class="banner-box">
+        <div class="banner-label">🎨 BRIEFING DE BANNER — DESIGNER</div>
+        <ul class="banner-items">
+          <li>Formato: Banner especial (600px) — o mais elaborado da campanha</li>
+          <li>Cena: duas velas acesas juntas em ambiente romântico — mesa posta, quarto, ou close nas chamas lado a lado</li>
+          <li>Texto no banner (mínimo): apenas "Feliz Dia dos Namorados" em tipografia elegante + logo da marca</li>
+          <li>Paleta: tons quentes, dourado/âmbar, fundo escuro — elegante e emocional</li>
+          <li>Estilo: completamente fotográfico e atmosférico — sem elementos gráficos de oferta no banner principal</li>
+          <li>Opcional: banner secundário menor com "25% OFF ainda ativo hoje — aproveite"</li>
+        </ul>
+      </div>
+      <p class="sig">Com carinho, <strong>Perfuma & Decora</strong></p>
+    </div>
+  </div>
+
+  <!-- EMAIL 07 -->
+  <div class="email-card">
+    <div class="email-header">
+      <div class="num">E-MAIL 07</div>
+      <div class="date-line">17/06/2026 (Quarta-feira) &nbsp;|&nbsp; Leads inativos &nbsp;|&nbsp; Reengajamento</div>
+    </div>
+    <div class="email-body">
+      <div class="field-label">ASSUNTO E PREVIEW TEXT</div>
+      <div class="field-box">
+        <div class="assunto">A gente sente sua falta. E o inverno ainda tem muito aconchego.</div>
+        <div class="preview">Que tal um convite para desacelerar com a gente?</div>
+      </div>
+      <div class="copy-label">CORPO DO E-MAIL</div>
+      <div class="copy-text">Faz um tempinho que a gente não se fala.
+
+Mas o inverno chegou — e com ele, o tipo de frio que pede cobertor, chá quente... e um aroma aconchegante no ar.
+
+Separamos algumas fragrâncias perfeitas para essa época:
+
+🌿 Musgo de Carvalho — amadeirado, sofisticado, envolvente
+🍂 Manhãs de Outono — quente e acolhedor como o nome já diz
+🍪 Vanila & Patchouli — doce, profundo, sensorial
+🌶️ Canela & Patchouli — especiado, quente, sofisticado
+
+25% OFF em toda a linha de velas
++ velinha de brinde em compras acima de R$ 99.
+
+Porque inverno é a estação certa pra se cuidar.</div>
+
+      <a class="cta-btn" href="#">QUERO ME CUIDAR ESSE INVERNO</a>
+
+      <div class="link-box">
+        <div class="link-label">🔗 LINK DE DESTINO DO CTA</div>
+        <div class="link-url">https://www.perfumaedecora.com.br/velas-aromaticas?utm_source=email&utm_medium=rdstation&utm_campaign=junho2026_inverno&utm_content=email07_reengajamento</div>
+      </div>
+
+      <div class="banner-box">
+        <div class="banner-label">🎨 BRIEFING DE BANNER — DESIGNER</div>
+        <ul class="banner-items">
+          <li>Formato: Banner principal (600px) + grade de 4 produtos (2×2 ou linha de 4)</li>
+          <li>Banner principal: imagem de inverno aconchegante — xícara de chá perto de vela acesa, ou ambiente com manta e vela</li>
+          <li>Headline do banner: "O inverno chegou. Seu ambiente está pronto?"</li>
+          <li>Grade de produtos: fotos dos 4 itens citados com nome e preço com 25% OFF em cada card</li>
+          <li>Produtos: Musgo de Carvalho · Manhãs de Outono · Vanila & Patchouli · Canela & Patchouli</li>
+          <li>Tom visual: cuidado, bem-estar, acolhimento — diferente dos emails de urgência</li>
+        </ul>
+      </div>
+      <p class="sig">Com carinho, <strong>Perfuma & Decora</strong></p>
+    </div>
+  </div>
+
+  <!-- EMAIL 08 — BIG VELA LUXURY -->
+  <div class="email-card" style="border: 2px solid #CE93D8;">
+    <div class="email-header luxury">
+      <div class="num">E-MAIL 08 <span class="new-badge">NOVO</span> — BIG VELA LUXURY 4.500g</div>
+      <div class="date-line">20/06/2026 (Sábado) &nbsp;|&nbsp; Todos os contatos &nbsp;|&nbsp; Produto destaque premium</div>
+    </div>
+    <div class="email-body">
+      <div class="field-label">ASSUNTO E PREVIEW TEXT</div>
+      <div class="field-box luxury-box">
+        <div class="assunto">Uma vela de 4.500g — e até 500 horas de inverno aconchegante.</div>
+        <div class="preview">A maior vela da Perfuma & Decora. Feita para durar todo o inverno.</div>
+      </div>
+
+      <div style="background:#F3E5F5;border-radius:8px;padding:14px 16px;margin-bottom:16px;border:1px solid #CE93D8;">
+        <div style="font-size:11px;font-weight:bold;color:#6A1B9A;letter-spacing:1px;margin-bottom:8px;">📦 DADOS REAIS DO PRODUTO (site)</div>
+        <ul style="list-style:none;padding:0;font-size:13px;color:#3E2651;">
+          <li>✔ Peso líquido: 4.500g &nbsp;|&nbsp; Peso bruto: 5.800g</li>
+          <li>✔ Tempo de queima: 300 a 500 horas</li>
+          <li>✔ Cera de coco 100% natural</li>
+          <li>✔ Fragrância de perfumaria fina (mais de 60 fragrâncias disponíveis para personalizar)</li>
+          <li>✔ Linha: Vela Aromática Luxo — disponível em várias fragrâncias com 25% OFF</li>
+          <li>✔ Também disponível: Vela Masculina Textura e Pedras | Edição Especial (R$ 589,90)</li>
+          <li>✔ URL: perfumaedecora.com.br/bigvelaluxury</li>
+        </ul>
+      </div>
+
+      <div class="copy-label">CORPO DO E-MAIL</div>
+      <div class="copy-text luxury-copy">Imagina uma vela que dura o inverno inteiro.
+
+De 300 a 500 horas de queima.
+Com 4.500 gramas de pura cera de coco natural.
+E a fragrância que você escolher — dentre mais de 60 opções.
+
+Essa é a Big Vela Luxury.
+
+Ela não é só uma vela.
+É uma peça que transforma o ambiente.
+É o tipo de objeto que as pessoas param para olhar — e perguntam de onde veio.
+
+Coloque na sala.
+Acenda no quarto.
+Presenteie alguém que merece o melhor.
+
+Com 25% OFF, a vela mais imponente da coleção está mais acessível do que nunca.
+
+E o melhor: você escolhe a fragrância perfeita para o seu inverno.
+
+O frio ainda vai durar um tempo.
+Que ele seja um prazer.</div>
+
+      <a class="cta-btn luxury-cta" href="#">CONHECER A BIG VELA LUXURY</a>
+
+      <div class="link-box">
+        <div class="link-label">🔗 LINK DE DESTINO DO CTA</div>
+        <div class="link-url">https://www.perfumaedecora.com.br/bigvelaluxury?utm_source=email&utm_medium=rdstation&utm_campaign=junho2026_inverno&utm_content=email08_bigvelaluxury</div>
+      </div>
+
+      <div class="banner-box">
+        <div class="banner-label">🎨 BRIEFING DE BANNER — DESIGNER</div>
+        <ul class="banner-items">
+          <li>Formato: Banner principal premium (600px) — deve transmitir luxo, exclusividade e grandiosidade</li>
+          <li>Produto: foto real da Vela Luxury 4.500g — o tamanho impressionante precisa aparecer (colocar ao lado de objeto para dar escala)</li>
+          <li>Headline: "4.500g. Até 500h de aroma." ou "A maior vela da coleção." em tipografia limpa e elegante</li>
+          <li>Paleta: fundo escuro quase preto ou vinho profundo — transmitir sofisticação e premium; dourado nos detalhes</li>
+          <li>Incluir: badge "25% OFF" discreto mas visível + "Escolha sua fragrância" como subtítulo</li>
+          <li>Evitar: elementos muito coloridos ou "barulhentos" — o produto já é o protagonista</li>
+          <li>Opcional: banner secundário mostrando a grade de fragrâncias disponíveis para personalização</li>
+        </ul>
+      </div>
+      <p class="sig">Com carinho, <strong>Perfuma & Decora</strong></p>
+    </div>
+  </div>
+
+  <!-- EMAIL 09 -->
+  <div class="email-card">
+    <div class="email-header">
+      <div class="num">E-MAIL 09</div>
+      <div class="date-line">25/06/2026 (Quinta-feira) &nbsp;|&nbsp; Todos os contatos &nbsp;|&nbsp; Encerramento da promoção</div>
+    </div>
+    <div class="email-body">
+      <div class="field-label">ASSUNTO E PREVIEW TEXT</div>
+      <div class="field-box">
+        <div class="assunto">Últimas horas da promoção de junho. Não deixa passar.</div>
+        <div class="preview">25% OFF + brinde: hoje é o último dia</div>
+      </div>
+      <div class="copy-label">CORPO DO E-MAIL</div>
+      <div class="copy-text">Junho está chegando ao fim.
+
+E com ele, a promoção que fez o inverno ficar ainda mais aconchegante:
+
+25% OFF em toda a linha de velas aromáticas.
+Velinha aromática de brinde em compras acima de R$ 99.
+
+Se você ainda não aproveitou — ou quer garantir mais uma para completar o ambiente — hoje é o dia.
+
+Porque o frio ainda vai ficar um tempo.
+E o aconchego, a gente escolhe.</div>
+
+      <a class="cta-btn" href="#">APROVEITAR ANTES QUE ACABE</a>
+
+      <div class="link-box">
+        <div class="link-label">🔗 LINK DE DESTINO DO CTA</div>
+        <div class="link-url">https://www.perfumaedecora.com.br/velas-aromaticas?utm_source=email&utm_medium=rdstation&utm_campaign=junho2026_inverno&utm_content=email09_encerramento</div>
+      </div>
+
+      <div class="banner-box">
+        <div class="banner-label">🎨 BRIEFING DE BANNER — DESIGNER</div>
+        <ul class="banner-items">
+          <li>Formato: Banner de encerramento (600px)</li>
+          <li>Headline: "Últimas horas." ou "Encerra hoje." em tipografia impactante</li>
+          <li>Imagem: vela em close — chama acesa, ambiente quente</li>
+          <li>Texto secundário: "25% OFF + Brinde em compras acima de R$ 99 — só até hoje"</li>
+          <li>Dica de produção: pode reaproveitar elementos visuais do Email 01, adaptando apenas o texto — economiza tempo de produção</li>
+        </ul>
+      </div>
+      <p class="sig">Com carinho, <strong>Perfuma & Decora</strong></p>
+    </div>
+  </div>
+
+</div><!-- /emails-section -->
+
+<footer>
+  Produzido pela equipe Remind Marketing Digital — Maio 2026<br>
+  Calendário de E-mail Marketing · Perfuma &amp; Decora · Junho 2026
+</footer>
+
+</body>
+</html>
